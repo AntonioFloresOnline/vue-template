@@ -5,6 +5,7 @@
       <li v-for="(item, index) in data" :key="index">
         <p>{{item.title}}</p>
         <p>{{item.description}}</p>
+        <button @click="removeItem(index)">Remove Item</button>
       </li>
     </ul>
     <hr />
@@ -17,7 +18,14 @@ import { mapState } from "vuex";
 export default {
   name: "VuexOutput",
   computed: {
-    ...mapState(["data"])
+    ...mapState(["data", "alvison"])
+  },
+  methods: {
+    removeItem(index) {
+      if (confirm("okay?")) {
+        this.$store.commit("removeData", index);
+      }
+    }
   }
 };
 </script>

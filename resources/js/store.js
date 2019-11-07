@@ -14,7 +14,8 @@ const store = new Vuex.Store({
         title: "This is data title 2",
         description: "Description, Dolor Sit Sammet"
       }
-    ]
+    ],
+    alvison: "soy alvison"
   },
   mutations: {
     addNewData(state, payload) {
@@ -23,6 +24,10 @@ const store = new Vuex.Store({
         description: payload.description
       };
       this.state.data.push(newData);
+    },
+    removeData(state, payload) {
+      const index = payload;
+      this.state.data.splice(index, 1);
     }
   }
 });
