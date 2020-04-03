@@ -1,9 +1,15 @@
 // Defining variables
 $primaryColor: #42b983;
+$primaryColorHover: #369268;
+$secondaryColor: #2973b7;
+$darkColor: #35495e;
 
 // Styles of the demo layout
 .demo-layout {
-  font-family: arial;
+  * {
+    font-family: arial;
+    color: $darkColor;
+  }
   header,
   footer {
     background: $primaryColor;
@@ -15,20 +21,20 @@ $primaryColor: #42b983;
   }
   .main {
     .page {
-      border: 2px solid tomato;
+      border: 2px solid $secondaryColor;
       margin: 20px 0px;
       border-radius: 5px;
       padding: 0px 30px;
       .page-title {
-        color: tomato;
+        color: $secondaryColor;
       }
       .component {
-        border: 2px solid rebeccapurple;
+        border: 2px solid $darkColor;
         border-radius: 5px;
         margin: 20px 0px;
         padding: 0px 10px;
         .component-title {
-          color: rebeccapurple;
+          color: $darkColor;
         }
       }
     }
@@ -45,14 +51,25 @@ $primaryColor: #42b983;
     text-decoration: none;
     cursor: pointer;
     font-size: 16px;
+    transition: all 500ms;
+  }
+
+  a:hover,
+  button:hover {
+    background: $primaryColorHover;
   }
 
   .form-group {
     margin-bottom: 10px;
     input {
-      border: 1px solid tomato;
+      border: 1px solid $darkColor;
       padding: 5px;
       border-radius: 5px;
+      font-size: 16px;
+    }
+    input:focus,
+    button:focus {
+      outline: none;
     }
     label {
       width: 190px;
