@@ -1,4 +1,45 @@
-.bar {
-  color: red; }
-  .bar .foo {
-    background: rebeccapurple; }
+.demo-layout {
+  font-family: arial; }
+  .demo-layout header,
+  .demo-layout footer {
+    background: #42b983;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px; }
+  .demo-layout .main .page {
+    border: 2px solid tomato;
+    margin: 20px 0px;
+    border-radius: 5px;
+    padding: 0px 30px; }
+    .demo-layout .main .page .page-title {
+      color: tomato; }
+    .demo-layout .main .page .component {
+      border: 2px solid rebeccapurple;
+      border-radius: 5px;
+      margin: 20px 0px;
+      padding: 0px 10px; }
+      .demo-layout .main .page .component .component-title {
+        color: rebeccapurple; }
+  .demo-layout a,
+  .demo-layout button {
+    background: #42b983;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px; }
+  .demo-layout .form-group {
+    margin-bottom: 10px; }
+    .demo-layout .form-group input {
+      border: 1px solid tomato;
+      padding: 5px;
+      border-radius: 5px; }
+    .demo-layout .form-group label {
+      width: 190px;
+      display: inline-block; }
+  .demo-layout .app-list {
+    padding-left: 17px; }

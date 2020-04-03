@@ -1,0 +1,65 @@
+// Defining variables
+$primaryColor: #42b983;
+
+// Styles of the demo layout
+.demo-layout {
+  font-family: arial;
+  header,
+  footer {
+    background: $primaryColor;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  .main {
+    .page {
+      border: 2px solid tomato;
+      margin: 20px 0px;
+      border-radius: 5px;
+      padding: 0px 30px;
+      .page-title {
+        color: tomato;
+      }
+      .component {
+        border: 2px solid rebeccapurple;
+        border-radius: 5px;
+        margin: 20px 0px;
+        padding: 0px 10px;
+        .component-title {
+          color: rebeccapurple;
+        }
+      }
+    }
+  }
+
+  // Global Styles
+  a,
+  button {
+    background: $primaryColor;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+    input {
+      border: 1px solid tomato;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    label {
+      width: 190px;
+      display: inline-block;
+    }
+  }
+  .app-list {
+    padding-left: 17px;
+  }
+}

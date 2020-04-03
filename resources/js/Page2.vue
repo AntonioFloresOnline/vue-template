@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <h2>I am the page 2.</h2>
+  <div class="page">
+    <h2 class="page-title">I am the page 2.</h2>
     <ComponentPage2 />
-    <p>Lorem Ipsum Dolor Site Sammet!</p>
-    <router-link to="/">Go to page 1</router-link>
+    <div class="form-group">
+      <router-link to="/">Go to page 1</router-link>
+    </div>
   </div>
 </template>
 

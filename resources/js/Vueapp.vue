@@ -1,19 +1,29 @@
 <template>
-  <div id="vueApp">
-    <h1>I am a vue app!</h1>
-    <transition name="fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
+  <div id="vueApp" class="demo-layout">
+    <AppHeader />
+    <div class="main">
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </div>
+    <AppFooter />
   </div>
 </template>
 
 <script>
+import AppHeader from "./layout_components/AppHeader";
+import AppFooter from "./layout_components/AppFooter";
+
 export default {
-  name: "VueInstance"
+  name: "VueInstance",
+  components: {
+    AppHeader,
+    AppFooter
+  }
 };
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 #productsApp {
   min-height: 100vh;
 }
